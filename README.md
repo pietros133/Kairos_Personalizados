@@ -32,7 +32,7 @@ A ideia central é conectar criatividade com personalização real de produtos.
 
 ---
 
-## Estrutura.
+## Estrutura de Pastas
 ```bash
 └── Kairos/
     ├── src/
