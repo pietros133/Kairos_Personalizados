@@ -33,6 +33,7 @@ A ideia central é conectar criatividade com personalização real de produtos.
 ---
 
 ## Estrutura.
+```bash
 └── Kairos/
     ├── src/
     │   ├── config
@@ -43,8 +44,7 @@ A ideia central é conectar criatividade com personalização real de produtos.
     │   ├── routes
     │   ├── services
     │   └── util
-    └── app.js        # funções auxiliares
-└──app.js
+    └──app.js
 
 ## Como funciona
 
