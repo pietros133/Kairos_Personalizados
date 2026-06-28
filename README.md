@@ -45,7 +45,7 @@ A ideia central é conectar criatividade com personalização real de produtos.
     │   ├── services
     │   └── util
     └──app.js
-
+```
 ## Como funciona
 
 1. O usuário acessa a plataforma  
