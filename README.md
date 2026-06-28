@@ -32,17 +32,18 @@ A ideia central é conectar criatividade com personalização real de produtos.
 
 ---
 
-## Estrutura
-kairos_personalizados/
-└── src/
-    ├── auth/            # autenticação (login, JWT, etc)
-    ├── config/          # configuração do banco e ambiente
-    ├── controllers/     # controle das requisições HTTP
-    ├── migrations/      # versionamento do banco de dados
-    ├── model/           # entidades e schemas
-    ├── routes/          # definição de rotas da API
-    ├── services/        # regras de negócio
-    ├── utils/           # funções auxiliares
+## Estrutura.
+└── Kairos/
+    ├── src/
+    │   ├── config
+    │   ├── auth
+    │   ├── controllers
+    │   ├── migrations
+    │   ├── model
+    │   ├── routes
+    │   ├── services
+    │   └── util
+    └── app.js        # funções auxiliares
 └──app.js
 
 ## Como funciona
