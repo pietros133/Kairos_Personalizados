@@ -56,18 +56,9 @@ Este projeto segue o padrão de Convencional Commits.
 | feat    | Nova funcionalidade        |
 | fix     | Correção de bugs           |
 | docs    | Alterações na documentação |
-| refactor|  Refatoração de código     |
+| refactor| Refatoração de código     |
 | perf    | Melhoria de performance    |
- ```
-
-
-## Como funciona
-
-1. O usuário acessa a plataforma  
-2. Escolhe um produto (ex: caneca)  
-3. Faz upload da sua arte ou imagem  
-4. Finaliza o pedido  
-5. O sistema salva os dados para produção  
+ ```  
 
 ---
 
