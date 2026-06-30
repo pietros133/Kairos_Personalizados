@@ -47,6 +47,20 @@ A ideia central é conectar criatividade com personalização real de produtos.
     │   └── util
     └──app.js
 ```
+## Padrão de Commits
+
+Este projeto segue o padrão de Convencional Commits.
+
+```bash
+| Tipo    |Descrição                   |  
+| feat    | Nova funcionalidade        |
+| fix     | Correção de bugs           |
+| docs    | Alterações na documentação |
+| refactor|  Refatoração de código     |
+| perf    | Melhoria de performance    |
+ ```
+
+
 ## Como funciona
 
 1. O usuário acessa a plataforma  
