@@ -56,7 +56,7 @@ Este projeto segue o padrão de Convencional Commits.
 | feat    | Nova funcionalidade        |
 | fix     | Correção de bugs           |
 | docs    | Alterações na documentação |
-| refactor| Refatoração de código     |
+| refactor| Refatoração de código      |
 | perf    | Melhoria de performance    |
  ```  
 
