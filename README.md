@@ -37,6 +37,7 @@ A ideia central é conectar criatividade com personalização real de produtos.
 └── Kairos/
     ├── src/
     │   ├── config
+    │   ├── middlewares
     │   ├── auth
     │   ├── controllers
     │   ├── migrations
