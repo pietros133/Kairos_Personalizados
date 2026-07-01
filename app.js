@@ -17,21 +17,17 @@ app.use("/auth", loginRoutes);
 app.use("/auth", addressRoutes);
 app.use("/auth", ProductRoutes);
 
-// Teste
-app.get("/test", (req, res) => {
-  res.status(200).send("FOI");
-});
 
-// Inicializa o banco e inicia o servidor
+
 AppDataSource.initialize()
   .then(() => {
-    console.log("✅ Banco conectado com sucesso!");
+    console.log(" Banco conectado com sucesso!");
 
     app.listen(PORT, () => {
-      console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
+      console.log(`Servidor rodando em http://localhost:${PORT}`);
     });
   })
   .catch((error) => {
-    console.error("❌ Erro ao conectar ao banco:", error);
+    console.error("Erro ao conectar ao banco:", error);
     process.exit(1);
   });
