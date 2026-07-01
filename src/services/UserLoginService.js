@@ -25,18 +25,22 @@ export const loginService = async (data) => {
   if (!isCorrectPassword) {
     throw new Error("INCORRECT_PASSWORD");
   }
-
   const token = jwt.sign(
-    { id: user.id, email: user.email },
+    {
+      id: user.id,
+      email: user.email,
+      role: user.role,
+    },
     process.env.JWT_SECRET,
     { expiresIn: "1d" },
   );
-
   return {
     token,
     user: {
+      id: user.id,
       name: user.name,
       email: user.email,
+      role: user.role,
     },
   };
 };

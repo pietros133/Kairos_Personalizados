@@ -7,10 +7,10 @@ export default new EntitySchema({
   columns: {
     id: { primary: true, type: "int", generated: true },
     nome: { type: "varchar" },
-    code: { type: "int" },
+    code: { type: "varchar", unique: true },
     color: { type: "varchar" },
-    size: { type: "varchar" },
-    price: { type: "double" },
+    size: { type: "simple-array", nullable: true },
+    price: { type: "decimal", precision: 10, scale: 2 },
     description: { type: "varchar" },
   },
 

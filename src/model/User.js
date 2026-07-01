@@ -6,8 +6,8 @@ export default new EntitySchema({
 
   columns: {
     id: {
-      primary: true,
       type: "int",
+      primary: true,
       generated: true,
     },
     name: {
