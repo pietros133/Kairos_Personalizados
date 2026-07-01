@@ -44,7 +44,7 @@ A ideia central é conectar criatividade com personalização real de produtos.
     │   ├── model
     │   ├── routes
     │   ├── services
-    │   └── util
+    │   └── utils
     └──app.js
 ```
 ## Padrão de Commits
