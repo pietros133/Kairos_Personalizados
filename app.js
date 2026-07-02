@@ -7,7 +7,7 @@ import registerRoutes from "./src/routes/registerRoutes.js";
 import loginRoutes from "./src/routes/loginRoutes.js";
 import addressRoutes from "./src/routes/addressRoutes.js";
 import ProductRoutes from "./src/routes/ProductRoutes.js";
-
+import UpdateUserRoutes from "./src/routes/updateUserRoutes.js";
 dotenv.config();
 
 const app = express();
@@ -15,10 +15,12 @@ const app = express();
 app.use(express.json());
 
 // Rotas
+
 app.use("/auth", registerRoutes);
 app.use("/auth", loginRoutes);
-app.use("/auth", addressRoutes);
-app.use("/auth", ProductRoutes);
+app.use("/addresses", addressRoutes);
+app.use("/products", ProductRoutes);
+app.use("/users", UpdateUserRoutes);
 
 const PORT = process.env.PORT;
 
