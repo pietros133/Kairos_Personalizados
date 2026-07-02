@@ -1,14 +1,17 @@
 import express from "express";
+import dotenv from "dotenv";
+
 import AppDataSource from "./src/config/dbconnect.js";
 
 import registerRoutes from "./src/routes/registerRoutes.js";
 import loginRoutes from "./src/routes/loginRoutes.js";
 import addressRoutes from "./src/routes/addressRoutes.js";
 import ProductRoutes from "./src/routes/ProductRoutes.js";
-const app = express();
-const PORT = 8081;
 
-// Middlewares
+dotenv.config();
+
+const app = express();
+
 app.use(express.json());
 
 // Rotas
@@ -17,11 +20,11 @@ app.use("/auth", loginRoutes);
 app.use("/auth", addressRoutes);
 app.use("/auth", ProductRoutes);
 
-
+const PORT = process.env.PORT;
 
 AppDataSource.initialize()
   .then(() => {
-    console.log(" Banco conectado com sucesso!");
+    console.log("Banco conectado com sucesso!");
 
     app.listen(PORT, () => {
       console.log(`Servidor rodando em http://localhost:${PORT}`);
